@@ -12,6 +12,8 @@
 		16CC91B920FD2ABD00635366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CC91B720FD2ABD00635366 /* Main.storyboard */; };
 		16CC91BB20FD2ABD00635366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CC91BA20FD2ABD00635366 /* Assets.xcassets */; };
 		16CC91BE20FD2ABD00635366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CC91BC20FD2ABD00635366 /* LaunchScreen.storyboard */; };
+		16CC91C920FD347900635366 /* ImagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CC91C820FD347900635366 /* ImagesCell.swift */; };
+		308A680DA8006F07FD942712 /* Pods_pixabay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AB11DCBA2E31CDE225ED69 /* Pods_pixabay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		16CC91BA20FD2ABD00635366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16CC91BD20FD2ABD00635366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		16CC91BF20FD2ABD00635366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16CC91C820FD347900635366 /* ImagesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesCell.swift; sourceTree = "<group>"; };
+		5D46169546E7DCC2BC19A3AF /* Pods-pixabay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixabay.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixabay/Pods-pixabay.release.xcconfig"; sourceTree = "<group>"; };
+		83AB11DCBA2E31CDE225ED69 /* Pods_pixabay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixabay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0AE2F22EE2694858CACC93D /* Pods-pixabay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixabay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixabay/Pods-pixabay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				308A680DA8006F07FD942712 /* Pods_pixabay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				16CC91B220FD2ABD00635366 /* pixabay */,
 				16CC91B120FD2ABD00635366 /* Products */,
+				D84818C70CA49C6C0FA17BCA /* Pods */,
+				5B5BA5140F30E917DF19D570 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,56 @@
 		16CC91B220FD2ABD00635366 /* pixabay */ = {
 			isa = PBXGroup;
 			children = (
+				16CC91C720FD2CC700635366 /* Controller */,
+				16CC91C620FD2CBC00635366 /* View */,
+				16CC91C520FD2C9C00635366 /* Model */,
 				16CC91B320FD2ABD00635366 /* AppDelegate.swift */,
-				16CC91B520FD2ABD00635366 /* ViewController.swift */,
 				16CC91B720FD2ABD00635366 /* Main.storyboard */,
 				16CC91BA20FD2ABD00635366 /* Assets.xcassets */,
 				16CC91BC20FD2ABD00635366 /* LaunchScreen.storyboard */,
 				16CC91BF20FD2ABD00635366 /* Info.plist */,
 			);
 			path = pixabay;
+			sourceTree = "<group>";
+		};
+		16CC91C520FD2C9C00635366 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16CC91C620FD2CBC00635366 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				16CC91C820FD347900635366 /* ImagesCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16CC91C720FD2CC700635366 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				16CC91B520FD2ABD00635366 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B5BA5140F30E917DF19D570 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83AB11DCBA2E31CDE225ED69 /* Pods_pixabay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D84818C70CA49C6C0FA17BCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0AE2F22EE2694858CACC93D /* Pods-pixabay.debug.xcconfig */,
+				5D46169546E7DCC2BC19A3AF /* Pods-pixabay.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 16CC91C220FD2ABD00635366 /* Build configuration list for PBXNativeTarget "pixabay" */;
 			buildPhases = (
+				D25AB5A8678784C0E9CF34E2 /* [CP] Check Pods Manifest.lock */,
 				16CC91AC20FD2ABD00635366 /* Sources */,
 				16CC91AD20FD2ABD00635366 /* Frameworks */,
 				16CC91AE20FD2ABD00635366 /* Resources */,
+				77DDA92B80F973D4E78F618B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,11 +184,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77DDA92B80F973D4E78F618B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pixabay/Pods-pixabay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pixabay/Pods-pixabay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D25AB5A8678784C0E9CF34E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pixabay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		16CC91AC20FD2ABD00635366 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16CC91C920FD347900635366 /* ImagesCell.swift in Sources */,
 				16CC91B620FD2ABD00635366 /* ViewController.swift in Sources */,
 				16CC91B420FD2ABD00635366 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +367,7 @@
 		};
 		16CC91C320FD2ABD00635366 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0AE2F22EE2694858CACC93D /* Pods-pixabay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +382,7 @@
 		};
 		16CC91C420FD2ABD00635366 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D46169546E7DCC2BC19A3AF /* Pods-pixabay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

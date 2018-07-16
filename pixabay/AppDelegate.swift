@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  pixabay
 //
-//  Created by Sayed Abdo on 7/16/18.
+//  Created by Amr Ali on 7/16/18.
 //  Copyright © 2018 TheAmrAli. All rights reserved.
 //
 
