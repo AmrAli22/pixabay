@@ -100,6 +100,7 @@
                     </view>
                     <connections>
                         <outlet property="SearchBar" destination="Gfi-6x-5vx" id="sdb-oU-l0w"/>
+                        <outlet property="TableView" destination="T4T-T2-Uzs" id="X3L-MC-goD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

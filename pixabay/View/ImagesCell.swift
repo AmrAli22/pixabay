@@ -13,15 +13,8 @@ class ImagesCell: UITableViewCell {
     @IBOutlet weak var ImgView: UIImageView!
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func ConfigureCell(Image : UIImage)
+    {
+        self.ImgView.image = Image
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

@@ -11,5 +11,5 @@ target 'pixabay' do
 
 pod 'Alamofire'
 pod 'AlamofireImage'
-
+pod 'SwiftyJSON'
 end
